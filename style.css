@@ -1,0 +1,128 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: aliceblue;
+        justify-content: center;
+        border-radius: 14px;
+    }
+.container{
+    display: flex;
+    max-width: 720px;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.15);
+    position: relative;
+}
+.container::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 12px 12px 0;
+    clip-path: circle(65% at right 35%);
+    background: linear-gradient(135deg, #fd9bb0 10%, #F6416c 100%);
+}
+.container .box.first{
+padding: 35px 5px 0 35px;
+}
+.box.first .info .topic{
+    font-size: 30px;
+    font-weight: 500;
+}
+.box.first .info p{
+    color:  #737373;
+    font-size: 14px;
+    font-weight: 500;
+}
+.box.first .info .rating{
+    color: #fb9bb0;
+}
+.box.second .information {
+    margin-top: 16px;
+}
+.box.second .information .anime-name{
+    font-size: 20px;
+    color: #737373;
+    margin: 10pc 0 0 13px;
+    position:relative;
+}
+
+.information .character{
+    color: #ffffff;
+    font-size: 30px;
+
+}
+.information .button1{
+    margin-top: 55px;
+}
+.box.first .button1 {
+    outline: none;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    background: #00e6e6;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box.first .button1:hover  {
+    transform: scale(0.98);
+}
+.container .box.second .image-box{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 32px;
+}
+.box.second .image img{
+height: 100%;
+width: 100%;
+margin-top: 30px;
+object-fit: cover;
+}
+.box-second.information{
+margin: 0 35px 0 0;
+margin-right: 20px;
+}
+.box.second .information .anime-name{
+    font-size: 17px;
+    font: 800;
+    color: #c9032e;
+}
+.button2 button{
+    outline: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: 1px solid #0fee0b;
+}
+.button2 button:hover{
+    background: #00e6e6;
+    border: 1px solid black;
+    transition: 1s all ease;
+    transform: translateY(10px);
+}
+.container .box.second .image{
+    height: 300px;
+    width: 400px;
+
+}
+.container.box.second .image img{
+    height: 100%;
+    font-weight: 100%;
+}
